@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>popup</title>
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/jquery-ui.min.css">
+    <!--    <link rel="stylesheet" href="src/styles/slick.css">-->
+    <link rel="stylesheet" href="../styles/slick-theme.css">
+
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet/less" href="../styles/style.less">
+
+</head>
+<body>
+
+<div class="popup" id="popup">
+        <div class="popup-tittle">
+            <h2>Заказать звонок</h2>
+        </div>
+        <div class="popup-thanks">
+            Спасибо! Мы перезвоним вам в течение нескольких минут
+        </div>
+        <div class="popup-text">
+            Оставьте заявку и наш менеджер свяжется с Вами в течение 10 минут.
+        </div>
+        <div class="popup-order">
+            <div class="popup-order-img">
+                <img src="../images/popup-phone.png" alt="phone">
+            </div>
+            <div class="popup-order-actions">
+                <div>
+                    <input type="text" class="order-input" placeholder="Ваше имя" id="namePopup">
+                    <div class="error-popup-input">Необходимо ввести Ваше имя</div>
+                </div>
+
+                <div>
+                    <input type="text" class="order-input" placeholder="+7 (___) ___ - __ - __" id="phonePopup">
+                    <div class="error-popup-input">Необходимо ввести Ваш телефон</div>
+                </div>
+
+                <button type="button" class="order-btn" id="submitPopup">Заказать звонок</button>
+
+                <div class="confidential">
+                    Нажимая на кнопку, Вы соглашаетесь  с
+                    <a href="#">Персональной обработкой данных</a>
+                </div>
+
+            </div>
+        </div>
+</div>
+
+<div class="loader">
+    <div class="lds-spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+
+
+<script src="../scripts/jquery-3.6.2.min.js"></script>
+<script src="../scripts/jquery-ui.min.js"></script>
+<!--<script src="src/scripts/slick.min.js"></script>-->
+<script src="../scripts/less.js"></script>
+<script src="../scripts/bootstrap.min.js"></script>
+<script src="../scripts/jquery.inputmask.min.js"></script>
+
+
+<script src="../scripts/main.js"></script>
+
+</body>
+</html>

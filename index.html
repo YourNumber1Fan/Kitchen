@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitchen</title>
+    <link rel="stylesheet" href="src/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="src/styles/jquery-ui.min.css">
+    <!--    <link rel="stylesheet" href="src/styles/slick.css">-->
+    <link rel="stylesheet" href="src/styles/slick-theme.css">
+    <link rel="stylesheet" href="src/styles/animate.min.css">
+
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet/less" href="src/styles/style.less">
+    <link rel="stylesheet/less" href="src/styles/adaptive.less">
+
+</head>
+<body>
+
+<section class="main">
+    <header class="header">
+        <div class="container d-flex justify-content-between">
+            <div class="logo">
+                <img src="src/images/logo.png" alt="logo">
+            </div>
+            <nav class="menu" id="menu">
+                <ul>
+                    <li>
+                        <a href="#section-warranties">Гарантии</a>
+                    </li>
+                    <li>
+                        <a href="#section-example">Портфолио</a>
+                    </li>
+                    <li>
+                        <a href="#section-benefit">Преимущества</a>
+                    </li>
+                    <li>
+                        <a href="#section-reviews">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#section-contacts">Контакты</a>
+                    </li>
+                </ul>
+                <div class="close" id="close">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+                    <g>
+	                <g>
+		            <path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+	                </g>
+                    </g>
+                    </svg>
+                </div>
+                <div id="burger">
+                    <svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"/>
+                        <path d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"/>
+                        <path d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z"/>
+                    </svg>
+                </div>
+            </nav>
+            <div class="contacts opacity-0">
+                +
+            </div>
+        </div>
+    </header>
+
+    <div class="socials-fixed">
+        <div class="facebook">
+            <img src="src/images/facebook-logo.png" alt="faceebok">
+        </div>
+        <div class="instagram">
+            <img src="src/images/instagram-logo.png" alt="instagram">
+        </div>
+        <div class="vk">
+            <img src="src/images/vk-logo.png" alt="vk">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-tittle">
+            <h1>
+                Изготавливаем элитные кухни немецкого качества
+            </h1>
+        </div>
+        <div class="main-body">
+            <div class="key">
+                <img src="src/images/key.png" alt="key">
+            </div>
+            <div class="main-text">
+                «под ключ» по европейским стандартам
+                и по индивидуальному дизайну
+            </div>
+        </div>
+        <div class="main-actions">
+            <button class="btn wow animate__heartBeat" id="calculate">Рассчитать стоимость</button>
+        </div>
+        <div class="main-pluses">
+            <div class="point"></div>
+            <div class="plus">Гарантия 25 лет!</div>
+            <div class="point"></div>
+            <div class="plus">Бесплатный замер</div>
+            <div class="point"></div>
+            <div class="plus">Удаленный расчет</div>
+        </div>
+    </div>
+</section>
+
+<div class="orange-block"></div>
+
+<section class="warranties" id="section-warranties">
+    <div class="container">
+
+        <div class="warranties-tittle">
+            <div class="strip"></div>
+            <h2>Мы гарантируем <span>нашим клиентам</span></h2>
+        </div>
+
+        <div class="warranty1">
+            <div class="warranty-tittle">Качество высокого уровня</div>
+            <div class="warranty-text">
+                Кухни производятся на фабрике, оснащенной современным итальянским оборудованием. Это значит, что
+                Ваша
+                кухня будет сделана с ювелирной точностью - все детали выполнены ровно по размеру.
+            </div>
+            <div class="number">1</div>
+        </div>
+
+        <div class="warranty2">
+            <div class="warranty-tittle">Гарантию надежности</div>
+            <div class="warranty-text">
+                Гарантия на кухонный гарнитур и ассесуары - 25 лет!
+                Если за это время Вы обнаружите недостатки,
+                мы устраняем их за свой счет.
+            </div>
+            <div class="number">2</div>
+        </div>
+
+        <div class="warranty3">
+            <div class="warranty-tittle">Отсутствие скрытых комиссий</div>
+            <div class="warranty-text">
+                Мы сразу называем конечную цену за гарнитур - дополнительных расходов у Вас не будет. Вы платите
+                только за изготовление. Дизайн-проект, выезд
+                замерщика и дизайнера — это бесплатно.
+            </div>
+            <div class="number">3</div>
+        </div>
+
+        <div class="warranty4">
+            <div class="warranty-tittle">Твердые сроки</div>
+            <div class="warranty-text">
+                Вам не придется ждать новую кухню 2 месяца.
+                Сроки изготовления гарнитура отражены
+                в нашем договоре.
+            </div>
+            <div class="number">4</div>
+        </div>
+    </div>
+</section>
+
+<section class="example" id="section-example">
+    <div class="container">
+
+        <div class="example-tittle">
+            <div class="strip"></div>
+            <h2>Такие кухни мы реализовали <span>для наших клиентов</span></h2>
+        </div>
+
+        <div class="example-text">
+            Каждый наш проект — уникальный и неповторимый. За всю историю существования нашей компании —
+            а это целых 11 лет — у нас еще не было ни одной похожей кухни. Ниже в нашем портфолио вы найдете
+            проекты, которыми мы очень гордимся.
+        </div>
+
+        <div class="example-main">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="src/images/kitchen_photo_1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="src/images/kitchen_photo_1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="src/images/kitchen_photo_1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="src/images/kitchen_photo_1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="src/images/kitchen_photo_1.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="example-content">
+                <div class="content-number">
+                    №15
+                </div>
+                <div class="content-tittle">
+                    Кухня в скандинавском стиле
+                </div>
+                <div class="content-description">
+                    <div class="parameters">
+                        <div class="param">
+                            Материал:
+                        </div>
+                        <div class="param">
+                            Планировка:
+                        </div>
+                        <div class="param">
+                            Скинали:
+                        </div>
+                        <div class="param">
+                            Столешница:
+                        </div>
+                        <div class="param">
+                            Размер кухни:
+                        </div>
+                    </div>
+                    <div class="values">
+                        <div class="value">
+                            Пластик Феникс
+                        </div>
+                        <div class="value">
+                            Прямолинейная
+                        </div>
+                        <div class="value">
+                            Керамическая плитка
+                        </div>
+                        <div class="value">
+                            Постформинг Egger
+                        </div>
+                        <div class="value">
+                            2200 x 2300 мм
+                        </div>
+                    </div>
+                </div>
+                <div class="content-time-money-place">
+                    <div class="place">
+                        <div class="place-image">
+                            <img src="src/images/maps-and-flags.png" alt="">
+                        </div>
+                        <div class="place-text">
+                            Москва
+                        </div>
+                    </div>
+                    <div class="hourglass">
+                        <div class="hourglass-image">
+                            <img src="src/images/hourglass.png" alt="">
+                        </div>
+                        <div class="hourglass-text">
+                            2018 г.
+                        </div>
+                    </div>
+                    <div class="ruble">
+                        <div class="ruble-image">
+                            <img src="src/images/ruble.png" alt="">
+                        </div>
+                        <div class="ruble-text">
+                            239 000 руб.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="example-statistics">
+            <div class="years">
+                <div class="years-image">
+                    <img src="src/images/11years.png" alt="">
+                </div>
+                <div class="years-text">
+                    Столко <span>лет</span> наша компания
+                    находится на рынке
+                </div>
+            </div>
+            <div class="amount">
+                <div class="amount-image">
+                    <img src="src/images/425kitchens.png" alt="">
+                </div>
+                <div class="amount-text">
+                    Такое число <span>уникальных кухонь</span>
+                    мы создали за это время
+                </div>
+            </div>
+            <div class="employee">
+                <div class="employee-image">
+                    <img src="src/images/34employee.png" alt="">
+                </div>
+                <div class="employee-text">
+                    Столько <span>сотрудников</span> трудятся
+                    для наших клиентов ежедневно
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="new-kitchen" id="section-benefit">
+    <div class="container">
+        <div class="new-kitchen-tittle">
+            <div class="strip"></div>
+            <h2>Новая кухня с нами — <span>это удобно!</span></h2>
+        </div>
+        <div class="new-kitchen-main">
+            <div class="new-kitchen-main-descriptions">
+                <div class="description">
+                    <div class="description-tittle">
+                        <div class="description-circle"></div>
+                        <h3>Дизайн-проект у вас дома</h3>
+                    </div>
+                    <div class="description-text">
+                        Не нужно выкраивать время на поездки по
+                        салонам. Дизайнер приедет к Вам домой,
+                        привезет образцы материалов, снимет
+                        замеры и вместе с Вами разработает проект.
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="description-tittle">
+                        <div class="description-circle"></div>
+                        <h3>Удаленный расчет</h3>
+                    </div>
+                    <div class="description-text">
+                        Мы уточним ваши пожелания по телефону и
+                        разработаем дизайн-проект удаленно. После этого
+                        останется лишь снять точные замеры.
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="description-tittle">
+                        <div class="description-circle"></div>
+                        <h3>Неограниченные изменения</h3>
+                    </div>
+                    <div class="description-text">
+                        Мы бесплатно вносим в дизайн-проект столько
+                        изменений, сколько потребуется для вашей
+                        идеальной кухни.
+                    </div>
+                </div>
+            </div>
+            <div class="new-kitchen-main-image">
+                <img src="src/images/pencil-kitchen.png" alt="">
+            </div>
+        </div>
+        <div class="twentyFive-years-signature">
+            <div class="twentyFive">
+                <div class="twentyFive-in">
+                    <div class="twentyFive-in-top">
+                        <div class="top-25">25</div>
+                        <div class="top-years">лет</div>
+                    </div>
+                    <div class="twentyFive-in-bottom">гарантия</div>
+                </div>
+            </div>
+            <div class="signature-border">
+                <div class="signature">
+                    <div class="signature-top">
+                        <div class="signature-top-quot">
+                            <img src="src/images/quote.png" alt="quote">
+                        </div>
+                        <div class="signature-top-text">
+                            Мы даем самую большую гарантию на наши кухни,
+                            потому что мы производим их сами на своей собственной
+                            фабрике и мы твердо уверены в их качестве.
+                        </div>
+                    </div>
+                    <div class="signature-bottom">
+                        <div class="signature-bottom-founder">
+                            Основатель фабрики «Shef»,
+                            Андрей Демидченко
+                        </div>
+                        <div class="signature-bottom-img">
+                            <img src="src/images/signature.png" alt="signature">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="review" id="section-reviews">
+    <div class="container">
+        <div class="review-tittle">
+            <div class="strip"></div>
+            <h2>Узнайте, что <span>наши клиенты говорят о нас</span></h2>
+        </div>
+        <div class="review-text">
+            Лучше всего о нашей работе могут рассказать видеоотзывы наших довольных клиентов!
+        </div>
+        <div class="videos">
+            <div class="video">
+                <iframe width="485" height="300" src="https://www.youtube.com/embed/SpkzVhtk87E"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                </iframe>
+                <div class="video-tittle">
+                    Видеоотзыв о проекте №208
+                </div>
+            </div>
+            <div class="video">
+                <iframe width="485" height="300" src="https://www.youtube.com/embed/tLsDDbKbp3g"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                </iframe>
+                <div class="video-tittle">
+                    Видеоотзыв о проекте №421
+                </div>
+            </div>
+            <div class="video">
+                <iframe width="485" height="300" src="https://www.youtube.com/embed/MWUGyQow5xA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                </iframe>
+                <div class="video-tittle">
+                    Видеоотзыв о проекте №137
+                </div>
+            </div>
+            <div class="video">
+                <iframe width="485" height="300" src="https://www.youtube.com/embed/QSUSPnAsbVM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                </iframe>
+                <div class="video-tittle">
+                    Видеоотзыв о проекте №158
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="measurer">
+    <div class="container">
+        <div class="measurer-tittle">
+            <div class="strip"></div>
+            <h2>Вызовите замерщика <span>на дом бесплатно!</span></h2>
+        </div>
+        <div class="measurer-text">
+            Мы приедем к вам домой, привезем образцы материалов, снимем замеры
+            и вместе с Вами разработаем дизайн-проект вашей кухни.
+        </div>
+        <div class="measurer-main">
+            <div class="order-form">
+                <div class="order-tittle" id="order-tittle">
+                    <h3>Заполните форму,</h3>
+                    <span>и мы свяжемся с Вами в ближайшее время</span>
+                </div>
+                <div class="order-thanks" id="order-thanks">
+                    <span>Спасибо! Мы перезвоним вам в течение нескольких минут.</span>
+                </div>
+
+                <div class="order">
+                    <div>
+                        <input type="text" class="order-input" placeholder="Ваше имя" id="name">
+                        <div class="error-input">Необходимо ввести Ваше имя</div>
+                    </div>
+
+                    <div>
+                        <input type="text" class="order-input" placeholder="+7 (___) ___ - __ - __" id="phone">
+                        <div class="error-input">Необходимо ввести Ваш телефон</div>
+                    </div>
+
+                    <div>
+                        <input type="text" class="order-input" placeholder="Желаемая дата и время" id="date">
+                        <div class="error-input">Необходимо ввести дату и время</div>
+                    </div>
+
+                    <button type="button" class="order-btn" id="submit">Вызвать замерщика</button>
+                </div>
+            </div>
+            <div class="measurer-img">
+                <img src="src/images/measurer.png" alt="measurer">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" id="section-contacts">
+    <div class="orange-block"></div>
+    <div class="footer-back">
+        <div class="container">
+            <div class="footer-top">
+                <div class="logo-socials">
+                    <div class="logo">
+                        <img src="src/images/logo.png" alt="logo">
+                    </div>
+                    <div class="socials">
+                        <div class="facebook">
+                            <img src="src/images/facebook-logo.png" alt="faceebok">
+                        </div>
+                        <div class="instagram">
+                            <img src="src/images/instagram-logo.png" alt="instagram">
+                        </div>
+                        <div class="vk">
+                            <img src="src/images/vk-logo.png" alt="vk">
+                        </div>
+                    </div>
+                </div>
+                <div class="address">
+                    <div class="address-tittle">
+                        Наш офис находится по адресу:
+                    </div>
+                    <div class="address-text">
+                        г. Москва, ул. Фруктовая, 11 (строение 1)
+                    </div>
+                </div>
+                <div class="work-time">
+                    <div class="work-time-tittle">
+                        Мы работаем:
+                    </div>
+                    <div class="work-time-text">
+                        Ежедневно, с 9:00 до 20:00
+                    </div>
+                </div>
+                <div class="contacts">
+                    <div class="contacts-phone">
+                        <div class="phone-img">
+                            <img src="src/images/phone.png" alt="phone">
+                        </div>
+                        <div class="phone-number">
+                            +7 (925) 877 77 65
+                        </div>
+                    </div>
+                    <div class="contacts-mail">
+                        <div class="mail-img">
+                            <img src="src/images/mail.png" alt="mail">
+                        </div>
+                        <div class="mail-mail">
+                            shef@gmail.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="rights">
+                    Все права защищены, 2019
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<div class="loader">
+    <div class="lds-spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<div class="popup" id="popup">
+    <div class="popup-tittle">
+        <h2>Заказать звонок</h2>
+    </div>
+    <div class="popup-thanks">
+        Спасибо! Мы перезвоним вам в течение нескольких минут
+    </div>
+    <div class="popup-text">
+        Оставьте заявку и наш менеджер свяжется с Вами в течение 10 минут.
+    </div>
+    <div class="popup-order">
+        <div class="popup-order-img">
+            <img src="src/images/popup-phone.png" alt="phone">
+        </div>
+        <div class="popup-order-actions">
+            <div>
+                <input type="text" class="order-input" placeholder="Ваше имя" id="namePopup">
+                <div class="error-popup-input">Необходимо ввести Ваше имя</div>
+            </div>
+
+            <div>
+                <input type="text" class="order-input" placeholder="+7 (___) ___ - __ - __" id="phonePopup">
+                <div class="error-popup-input">Необходимо ввести Ваш телефон</div>
+            </div>
+
+            <button type="button" class="order-btn" id="submitPopup">Заказать звонок</button>
+
+            <div class="confidential">
+                Нажимая на кнопку, Вы соглашаетесь с
+                <a href="#">Персональной обработкой данных</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="src/scripts/jquery-3.6.2.min.js"></script>
+<script src="src/scripts/jquery-ui.min.js"></script>
+<!--<script src="src/scripts/slick.min.js"></script>-->
+<script src="src/scripts/less.js"></script>
+<script src="src/scripts/bootstrap.min.js"></script>
+<script src="src/scripts/jquery.inputmask.min.js"></script>
+<script src="src/scripts/wow.min.js"></script>
+
+<script src="src/scripts/main.js"></script>
+
+</body>
+</html>
